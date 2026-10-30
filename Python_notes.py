@@ -1,21 +1,27 @@
 # Instalaciones de python.exe en el sistema:
 
-Python Install Manager (en el paquete MSIX instalado de Microsoft Store):
-C:\Users\Andres\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.PythonManager_3847v3x7pw1km\python.exe
-Alias de ejecución de Windows:
-C:\Users\Andres\AppData\Local\Microsoft\WindowsApps\python.exe
+# Python Install Manager (en el paquete MSIX instalado de Microsoft Store):
+# C:\Users\Andres\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.PythonManager_3847v3x7pw1km\python.exe
+# Alias de ejecución de Windows:
+# C:\Users\Andres\AppData\Local\Microsoft\WindowsApps\python.exe
 
-Lanzador de Python gestionado por Python Install Manager::
-C:\Users\Andres\AppData\Local\Python\bin\python.exe
-Instalación de CPython 3.13 de 64 bits:
-C:\Users\Andres\AppData\Local\Python\pythoncore-3.13-64\python.exe
+# Lanzador de Python gestionado por Python Install Manager::
+# C:\Users\Andres\AppData\Local\Python\bin\python.exe
+# Instalación de CPython 3.13 de 64 bits:
+# C:\Users\Andres\AppData\Local\Python\pythoncore-3.13-64\python.exe
 
-Instalación base de Conda de ArcGIS Pro:
-C:\Program Files\ArcGIS\Pro\bin\Python\python.exe
-Entorno predeterminado de ArcGIS Pro (arcgispro-py3):
-C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe
-Entorno clonado de ArcGIS Pro (arcgispro-py3-clone):
-C:\Users\Andres\AppData\Local\ESRI\conda\envs\arcgispro-py3-clone\python.exe
+# Instalación base de Conda de ArcGIS Pro:
+# C:\Program Files\ArcGIS\Pro\bin\Python\python.exe
+# Entorno predeterminado de ArcGIS Pro (arcgispro-py3):
+# C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe
+# Entorno clonado de ArcGIS Pro (arcgispro-py3-clone):
+# C:\Users\Andres\AppData\Local\ESRI\conda\envs\arcgispro-py3-clone\python.exe
+
+# # Herramientas de Esri para ejecutar Python y gestionar entornos de ArcGIS Pro:
+# propy.bat # Ejecuta Python con la configuración de entorno de ArcGIS Pro en CMD.
+# proenv.bat # Configura una consola CMD para trabajar con Conda y los entornos de Python de ArcGIS Pro en CMD.
+# "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" "C:\ruta\script.py" # Ejecuta un script con el intérprete del entorno predeterminado de ArcGIS Pro y sus paquetes instalados.
+# "C:\Users\Andres\AppData\Local\ESRI\conda\envs\arcgispro-py3-clone\python.exe" "C:\ruta\script.py" # Ejecuta un script con el intérprete del entorno clonado de ArcGIS Pro y sus paquetes instalados.
 
 
 # Comandos de inspección de Python:
@@ -42,8 +48,3 @@ python -m pip uninstall pandas 		# Desinstala pandas del entorno activo.
 python -m pip show pandas 		# Muestra información sobre un paquete instalado.
 python -m pip freeze 			# Lista los paquetes instalados con sus versiones.
 
-# Herramientas de Esri para ejecutar Python y gestionar entornos de ArcGIS Pro:
-propy.bat # Ejecuta Python con la configuración de entorno de ArcGIS Pro en CMD.
-proenv.bat # Configura una consola CMD para trabajar con Conda y los entornos de Python de ArcGIS Pro en CMD.
-"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" "C:\ruta\script.py" # Ejecuta un script con el intérprete del entorno predeterminado de ArcGIS Pro y sus paquetes instalados.
-"C:\Users\Andres\AppData\Local\ESRI\conda\envs\arcgispro-py3-clone\python.exe" "C:\ruta\script.py" # Ejecuta un script con el intérprete del entorno clonado de ArcGIS Pro y sus paquetes instalados.
