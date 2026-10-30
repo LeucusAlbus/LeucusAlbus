@@ -1,0 +1,45 @@
+# Python interpreter inspection commands:
+    where python                                  # Displays the paths of Python executables found in PATH, in order of priority.
+    python -c "import sys; print(sys.executable)" # Displays the path of the currently running Python interpreter.
+    py -0p                                        # Lists Python versions registered with Python Launcher and their installation paths.
+
+# Python executable installations on the system:
+    C:\Users\Andres\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.PythonManager_3847v3x7pw1km\python.exe  # Python Install Manager (Microsoft Store MSIX package)
+    C:\Users\Andres\AppData\Local\Microsoft\WindowsApps\python.exe      # Windows execution alias
+    C:\Users\Andres\AppData\Local\Python\bin\python.exe                 # Python launcher managed by Python Install Manager
+    C:\Users\Andres\AppData\Local\Python\pythoncore-3.13-64\python.exe  # CPython 3.13 (64-bit) installation
+
+    C:\Program Files\ArcGIS\Pro\bin\Python\python.exe                             # ArcGIS Pro base Conda installation
+    C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe          # ArcGIS Pro default environment (arcgispro-py3)
+    C:\Users\Andres\AppData\Local\ESRI\conda\envs\arcgispro-py3-clone\python.exe  # ArcGIS Pro cloned environment (arcgispro-py3-clone)
+
+# Esri utilities for Python execution and ArcGIS Pro environment management:
+    "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy.bat"        # Launches Python using the ArcGIS Pro environment configuration from CMD.
+    "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\proenv.bat"       # Configures a CMD session for working with Conda and ArcGIS Pro Python environments.
+    "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" "C:\path\script.py"         # Executes a script using the default ArcGIS Pro interpreter.
+    "C:\Users\Andres\AppData\Local\ESRI\conda\envs\arcgispro-py3-clone\python.exe" "C:\path\script.py" # Executes a script using the cloned ArcGIS Pro interpreter.
+
+# Installing Python versions using Windows Python Install Manager (py or pymanager):
+    py list             # Lists Python versions installed and managed by Python Install Manager.
+    py list --online    # Lists Python versions available for installation.
+    py install 3.12     # Installs Python 3.12 using Python Install Manager.
+    py uninstall 3.12   # Uninstalls Python 3.12.
+
+# Creating a Python virtual environment:
+    python -m venv venv          # Creates a virtual environment named venv in the current working directory.
+    venv\Scripts\activate.bat    # Activates the virtual environment in CMD.
+    deactivate                   # Deactivates the active virtual environment.
+
+# Package management within a virtual environment:
+    python -m pip list                      # Lists packages installed in the active environment.
+    python -m pip install pandas            # Installs pandas in the active environment.
+    python -m pip install --upgrade pandas  # Upgrades pandas in the active environment.
+    python -m pip uninstall pandas          # Uninstalls pandas from the active environment.
+    python -m pip show pandas               # Displays information about an installed package.
+    python -m pip freeze                    # Lists installed packages and their versions.
+
+# Common Python Command Line Options
+    python -m pip list                          # Execute a module as a script
+    python -c "print('Hello')"                  # Execute Python code directly
+    python -i script.py                         # Enter interactive mode after executing a script
+    python --version                            # Display the Python version
